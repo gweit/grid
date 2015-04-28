@@ -13,4 +13,4 @@ http://grid.ghosted.it
 * Go to your Ghost Blog Backend and change your Theme to Grid.
 
 
-** If you need a Ghost Blog to try Grid you can find one on [Ghosted](http://ghosted.it) **
+**If you need a Ghost Blog to try Grid you can find one on [Ghosted](http://ghosted.it)**
