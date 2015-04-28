@@ -1,0 +1,46 @@
+
+
+<div id="theGrid" class="main">
+
+<section class="grid">
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+
+                    <a class="grid__item" href="#">
+                        <h2 class="title title--preview">{{{title}}}</h2>
+                        <p><small>{{excerpt words="10"}}</small></p>
+                        <div class="loader"></div>
+                        <img src="{{author.image}}" width="32px" height="32px">
+                    </a>
+
+{{/foreach}}
+
+</section>
+
+<section class="content">
+
+{{#foreach posts}}
+
+
+                    <div class="scroll-wrap">
+                        <article class="content__item">
+                            <!-- <span class="category category--full">{{{title}}}</span> -->
+                            <h2 class="title title--full">{{{title}}}</h2>
+                            <div class="meta meta--full">
+                                <img width="32px" height="32px" class="meta__avatar" src="{{author.image}}" >
+                                <span><small>Written by {{author.name}} on {{date format='YYYY-MM-DD'}}</small></span>
+                            </div>
+                            {{content}}
+                        </article>
+                        
+                    </div>
+                    <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+
+{{/foreach}}
+
+</section>
+
+</div> 
+
+

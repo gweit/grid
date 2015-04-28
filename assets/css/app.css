@@ -1,0 +1,47 @@
+.site-footer {
+	position: fixed;
+	bottom: 0;
+}
+
+.grid__item:hover::before,
+.grid__item:focus::before {
+	border: 3px solid rgba(26,188,156, .4);
+}
+
+.grid__item img {
+	margin: auto;
+}
+
+.meta {
+	text-align: center;
+	margin: 0 auto 64px;
+}
+
+.loader:before {
+	background: #1abc9c;
+}
+
+.nav-menu .nav-title {
+	color: rgba(51,51,51, .9);
+	font-weight: 700;
+	font-size: 16px;
+	position: relative;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid rgba(51,51,51, .2);
+	padding-bottom: 8px;
+	margin: 54px 36px 12px;
+}
+
+.nav-menu li a {
+	color: rgba(51,51,51, .6);
+	font-size: 16px;
+}
+
+.nav-menu li a:hover {
+	color: rgba(51,51,51, .8);
+}
+
+.nav-menu li {
+	list-style: none;
+}
